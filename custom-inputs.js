@@ -8,10 +8,11 @@ $.fn.customInput = function(inputType) {
 		triggerHTML = '<i class="'+inputType+'"></i>',
 		inputSelector = 'input[type="'+inputType+'"]';
 	
-	// inputs.hide();
+	//Hide inputs and add custom HTML
+	inputs.hide();
 	inputWrappers.prepend(triggerHTML);
 
-	//Entrées cochées par défaut
+	//Tick default inputs
 	inputs.each(function(){
 		var input = $(this),
 			trigger = input.siblings(triggerSelector);
@@ -21,6 +22,7 @@ $.fn.customInput = function(inputType) {
 		}
 	});	
 
+	//Change icon state based on input type
 	function check(trigger) {
 		var neighbors =  null;
 
@@ -38,6 +40,7 @@ $.fn.customInput = function(inputType) {
 		}
 	}
 
+	//Activate input by clicking icon
 	$(triggerSelector).on('click', function(){
 		var trigger = $(this),
 			input = $(this).siblings(inputSelector);
@@ -47,6 +50,7 @@ $.fn.customInput = function(inputType) {
 		check(trigger);
 	});
 
+	//Check icon on label click
 	labels.on('click', function(){
 		var trigger = $(this).siblings(triggerSelector);
 		
