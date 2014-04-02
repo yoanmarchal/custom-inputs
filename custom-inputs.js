@@ -18,7 +18,6 @@ $.fn.customInput = function(inputType) {
 		
 		if(input.is(':checked')) {
 			trigger.addClass('checked');
-			console.log(input.attr('id'));
 		}
 	});	
 
@@ -37,7 +36,6 @@ $.fn.customInput = function(inputType) {
 				trigger.toggleClass('checked');
 			break;
 		}
-		console.log(inputType);
 	}
 
 	$(triggerSelector).on('click', function(){
