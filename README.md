@@ -1,13 +1,13 @@
-custom-inputs
-=============
+# custom-inputs
+
 
 Custom radio buttons and checkboxes
 
-Markup
+## Markup
 
 Checkboxes:
-<code>
 
+```
   <ul class="checkboxes">
     <li>
       <input id="checkbox1" type="checkbox">
@@ -18,36 +18,37 @@ Checkboxes:
       <label for="checkbo2"></label>
     </li>    
   </ul>
-
-</code>
+```
 
 Radio Buttons:
-<code>
 
+```
   <ul class="radio-buttons">
     <li>
       <input id="checkbox1" type="radio">
-      <label for="checkbox1"></label>
+      <label for="checkbox1">Checkbox 1</label>
     </li>
     <li>
       <input id="radio2" type="radio">
-      <label for="radio2"></label>
+      <label for="radio2">Checkbox 2</label>
     </li>
   </ul>
+```
 
-</code>
+
+## Initialise
 
 
-Initialise
-
-<code>
+```
   <script>
     $('checkboxes').customInput('checkbox');
   </script>
-</code>
 
-<code>
+```
+
+
+```
   <script>
     $('radio-buttons').customInput('radio');
   </script>
-</code>
+```
