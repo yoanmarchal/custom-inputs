@@ -12,16 +12,6 @@ $.fn.customInput = function(inputType) {
 	inputs.hide();
 	inputWrappers.prepend(triggerHTML);
 
-	//Tick default inputs
-	inputs.each(function(){
-		var input = $(this),
-			trigger = input.siblings(triggerSelector);
-		
-		if(input.is(':checked')) {
-			trigger.addClass('checked');
-		}
-	});
-
 	//Change icon state based on input type
 	function check(trigger) {
 		var neighbors =  null;
@@ -39,6 +29,16 @@ $.fn.customInput = function(inputType) {
 			break;
 		}
 	}
+	
+	//Tick default inputs
+	inputs.each(function(){
+		var input = $(this),
+			trigger = input.siblings(triggerSelector);
+		
+		if(input.is(':checked')) {
+			trigger.addClass('checked');
+		}
+	});
 
 	//Activate input by clicking icon
 	$(triggerSelector).on('click', function(){
