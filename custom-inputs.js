@@ -55,5 +55,5 @@ $.fn.customInput = function(inputType) {
 		var trigger = $(this).siblings(triggerSelector);
 		
 		check(trigger);
-	});			
-}
+	});
+};
