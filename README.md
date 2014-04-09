@@ -41,9 +41,13 @@ Radio Buttons:
 Initialise
 
 <code>
-  $('checkboxes').customInput('checkbox');
+  <script>
+    $('checkboxes').customInput('checkbox');
+  </script>
 </code>
 
 <code>
-  $('radio-buttons').customInput('radio');
+  <script>
+    $('radio-buttons').customInput('radio');
+  </script>
 </code>
