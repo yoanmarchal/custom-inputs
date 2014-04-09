@@ -20,7 +20,7 @@ $.fn.customInput = function(inputType) {
 		if(input.is(':checked')) {
 			trigger.addClass('checked');
 		}
-	});	
+	});
 
 	//Change icon state based on input type
 	function check(trigger) {
@@ -55,5 +55,5 @@ $.fn.customInput = function(inputType) {
 		var trigger = $(this).siblings(triggerSelector);
 		
 		check(trigger);
-	});			
-}
+	});
+};
