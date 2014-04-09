@@ -7,7 +7,7 @@ Custom radio buttons and checkboxes
 
 Checkboxes:
 
-```
+```html
   <ul class="checkboxes">
     <li>
       <input id="checkbox1" type="checkbox">
@@ -22,7 +22,7 @@ Checkboxes:
 
 Radio Buttons:
 
-```
+```html
   <ul class="radio-buttons">
     <li>
       <input id="checkbox1" type="radio">
@@ -36,10 +36,10 @@ Radio Buttons:
 ```
 
 
-## Initialise
+## Initialize
 
 
-```
+```js
   <script>
     $('checkboxes').customInput('checkbox');
   </script>
@@ -47,7 +47,7 @@ Radio Buttons:
 ```
 
 
-```
+```js
   <script>
     $('radio-buttons').customInput('radio');
   </script>
