@@ -5,9 +5,9 @@ Custom radio buttons and checkboxes
 
 ## Markup
 
-Checkboxes:
+### Checkboxes
 
-```html
+``` html
   <ul class="checkboxes">
     <li>
       <input id="checkbox1" type="checkbox">
@@ -20,9 +20,9 @@ Checkboxes:
   </ul>
 ```
 
-Radio Buttons:
+### Radio Buttons
 
-```html
+``` html
   <ul class="radio-buttons">
     <li>
       <input id="checkbox1" type="radio">
@@ -38,16 +38,18 @@ Radio Buttons:
 
 ## Initialize
 
+### Checkboxes
 
-```js
+``` js
   <script>
     $('checkboxes').customInput('checkbox');
   </script>
 
 ```
 
+### Radio Buttons
 
-```js
+``` js
   <script>
     $('radio-buttons').customInput('radio');
   </script>
